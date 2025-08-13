@@ -13,6 +13,9 @@
 - 🔒 API key stored locally for security
 
 ---
+## Overview 
+
+![Overview of Extension](./outputs/overview.png)
 
 ---
 
