@@ -22,6 +22,8 @@
 3. Enable **Developer mode** (toggle at top right).
 4. Click **Load unpacked** → select the `MeetingSummarizer-Final` folder.
 5. The extension will now appear in your Chrome toolbar.
+   (outputs/chrome extension.png)
+
 
 ---
 
