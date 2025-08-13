@@ -45,6 +45,17 @@
 
 ---
 
+## 📄 Output
+- After recording, the extension sends the audio to the **Gemini API**.
+- The API responds with a **formatted text** containing:
+  - **## Transcription** → full meeting text
+  - **## Summary** → concise points, action items, and decisions
+- Both sections appear inside the popup:
+  - **Transcript** in one box
+  - **Summary** in another box
+- You can click **Export Summary** to instantly download the summary as a `.txt` file.
+- The downloaded file is automatically named like: meeting_summary_YYYY-MM-DD.txt
+
 ## 🛡️ License
 MIT License — feel free to modify and use.
 
