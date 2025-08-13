@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Meeting Digest Pro (Final)",
+  "version": "3.0",
+  "description": "Records meeting audio, then transcribes and summarizes using the Gemini API.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; connect-src https://generativelanguage.googleapis.com; font-src https://cdnjs.cloudflare.com;"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

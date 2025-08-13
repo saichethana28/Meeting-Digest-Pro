@@ -1,0 +1,97 @@
+:root {
+  --primary-color: #4285f4;
+  --error-color: #d32f2f;
+  --success-color: #34a853;
+  --text-color: #202124;
+  --bg-light: #f8f9fa;
+  --border-color: #dadce0;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 380px;
+  padding: 16px;
+  color: var(--text-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+header h1 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+#startBtn {
+  background-color: var(--primary-color);
+  color: white;
+}
+#stopBtn {
+  background-color: var(--error-color);
+  color: white;
+}
+#downloadBtn {
+  background-color: var(--success-color);
+  color: white;
+  margin-top: 8px;
+}
+#status {
+  text-align: center;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 4px;
+}
+.status-info { color: #5f6368; }
+.status-error { color: var(--error-color); background-color: #fdecea; }
+.status-success { color: var(--success-color); background-color: #e6f4ea; }
+
+.output-section {
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+.content-box {
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 50px;
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.placeholder {
+  color: #80868b;
+  font-style: italic;
+}
+#loadingSpinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.hidden {
+  display: none !important;
+}

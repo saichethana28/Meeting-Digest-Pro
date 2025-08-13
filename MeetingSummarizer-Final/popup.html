@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meeting Digest Pro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Meeting Digest Pro</h1>
+    </header>
+
+    <div class="controls">
+      <button id="startBtn" aria-label="Start recording">
+        <i class="fas fa-microphone"></i> Start
+      </button>
+      <button id="stopBtn" disabled aria-label="Stop recording">
+        <i class="fas fa-stop"></i> Stop
+      </button>
+    </div>
+
+    <div id="status" class="status-info" aria-live="polite">Ready to record</div>
+
+    <div id="loadingSpinner" class="hidden" aria-hidden="true">
+      <i class="fas fa-spinner fa-spin"></i> Transcribing & Summarizing...
+    </div>
+
+    <section id="transcript-section" class="output-section hidden">
+      <h2>Transcript</h2>
+      <div id="transcript" class="content-box">
+        <span class="placeholder">Your transcript will appear here after processing.</span>
+      </div>
+    </section>
+
+    <section id="summary-section" class="output-section hidden">
+      <h2>Summary</h2>
+      <div id="summary" class="content-box">
+         <span class="placeholder">Your summary will appear here after processing.</span>
+      </div>
+      <button id="downloadBtn" disabled class="download-btn">
+        <i class="fas fa-download"></i> Export Summary
+      </button>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
