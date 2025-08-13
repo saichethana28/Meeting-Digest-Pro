@@ -34,6 +34,7 @@
 3. Enter your **Google AI Studio (Gemini) API Key** (starts with `AIzaSy...`).
 4. Save and verify the key.
 
+![Options Page](./outputs/options%20page.png)
 ---
 
 ## 📋 Permissions Used
@@ -48,16 +49,36 @@
 
 ---
 
-## 📄 Output
-- After recording, the extension sends the audio to the **Gemini API**.
-- The API responds with a **formatted text** containing:
+## 📄 Output — Step by Step
+1. **Start Recording**  
+   Click **Start** in the popup to begin capturing meeting audio.  
+   ![Start Recording](./outputs/start.png)
+
+2. **Recording in Progress**  
+   The extension actively listens and stores the audio locally.  
+   ![Recording](./outputs/recording.png)
+
+3. **Processing Audio**  
+   Once stopped, the extension sends audio to the Gemini API for transcription and summarization.  
+   ![Processing](./outputs/processed.png)
+
+4. **View the Results**  
+   The popup displays both the **Transcript** and the **Summary**.  
+   ![Summary in Popup](./outputs/Summary.png)
+
+5. **Download the Summary File**  
+   Click **Export Summary** to download it as a `.txt` file.  
+   ![Summary File](./outputs/summary%20file.png)
+
+---
+
+## 📜 How Output is Generated
+- Audio is recorded using the **MediaRecorder API**.
+- The recorded file is converted and sent to **Gemini API**.
+- The API returns:
   - **## Transcription** → full meeting text
-  - **## Summary** → concise points, action items, and decisions
-- Both sections appear inside the popup:
-  - **Transcript** in one box
-  - **Summary** in another box
-- You can click **Export Summary** to instantly download the summary as a `.txt` file.
-- The downloaded file is automatically named like: meeting_summary_YYYY-MM-DD.txt
+  - **## Summary** → bullet points, action items, decisions
+- The summary is displayed instantly and can be downloaded as: meeting_summary_YYYY-MM-DD.txt
 
 ## 🛡️ License
 MIT License — feel free to modify and use.
