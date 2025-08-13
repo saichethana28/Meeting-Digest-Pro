@@ -1,6 +1,4 @@
 # Meeting-Digest-Pro
-AI-driven Chrome extension that transcribes and summarizes live meetings.
-# Meeting Digest Pro
 
 **Meeting Digest Pro** is a Chrome extension that records meeting audio, transcribes it, and generates a concise summary of key discussion points, action items, and decisions — all powered by the Gemini API.
 
